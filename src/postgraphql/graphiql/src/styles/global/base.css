@@ -1,0 +1,48 @@
+body {
+  color: #333;
+}
+
+body,
+button,
+input {
+  font-family: system,
+    -apple-system,
+    'San Francisco',
+    '.SFNSDisplay-Regular',
+    'Segoe UI',
+    Segoe,
+    'Segoe WP',
+    'Helvetica Neue',
+    helvetica,
+    'Lucida Grande',
+    arial,
+    sans-serif;
+}
+
+/* Toast */
+/* These need to be global since toast does not expose an api to inject classnames for all components */
+
+:global .toast-top-right {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+}
+
+:global .toast {
+  background: white;
+  padding: 21px;
+  margin-right: 14px;
+}
+
+:global .toast-success {
+  background-color: #8ee68e;
+  border: 1px solid #27b427;
+  color: #27b427;
+}
+
+:global .toast-error {
+  background-color: red;
+  border: 1px solid #27b427;
+  color: #27b427;
+}
